@@ -1,6 +1,6 @@
 {
   "name": "@widyatama/ui",
-  "version": "1.0.2",
+  "version": "1.0.2-beta.8",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "style": "dist/style.css",
@@ -9,6 +9,7 @@
   ],
   "license": "MIT",
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "scripts": {
@@ -18,11 +19,13 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "lucide-react": "^0.525.0"
+  },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.525.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "clsx": "^2.1.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.0",
@@ -44,6 +47,9 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
-    "vitest": "^3.2.3"
+    "vitest": "^3.2.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.525.0"
   }
 }
